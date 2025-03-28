@@ -39,6 +39,14 @@ You can use the `FormErrorPipe` in your Angular templates to display error messa
 }
 ```
 
+or with mat-error
+
+```html
+<mat-error>
+  {{ formControl?.errors | formError: customValidationForRequied : false }}
+</mat-error>
+```
+
 ### Custom Validation Messages
 
 You can pass custom validation messages to the pipe as an optional parameter.
